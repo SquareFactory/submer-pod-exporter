@@ -2,7 +2,7 @@ module github.com/squarefactory/submer-pod-exporter
 
 go 1.21
 
-toolchain go1.24.1
+toolchain go1.24.2
 
 require (
 	github.com/prometheus/client_golang v1.21.1
