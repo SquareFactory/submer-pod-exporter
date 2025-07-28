@@ -25,7 +25,7 @@ jobs:
 
       - name: Build
         if: "!startsWith(github.ref, 'refs/tags/')"
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v6
         with:
           file: ./Dockerfile
           platforms: linux/amd64
@@ -50,7 +50,7 @@ jobs:
 
       - name: Build and export
         if: startsWith(github.ref, 'refs/tags/')
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v6
         with:
           file: ./Dockerfile
           platforms: linux/amd64
