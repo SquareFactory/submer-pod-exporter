@@ -1,4 +1,4 @@
-FROM docker.io/library/golang:1.25.3-alpine as builder
+FROM docker.io/library/golang:1.25.4-alpine as builder
 WORKDIR /go/src/github.com/squarefactory/submer-pod-exporter/
 COPY go.mod go.sum ./
 RUN go mod download
